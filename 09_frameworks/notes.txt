@@ -8,7 +8,7 @@ Middleware - global level - route level - function level
 
 ** Data
 * Headers
-* Methods - GET, POST, PUT, PATCH, DELETE - OPTIONS
+* Methods - GET, POST, PUT, PATCH, DELETE - OPTIONS // Those are the Methods that we need to know
 * Body
 * Query Params
 * Path Params /books/:id

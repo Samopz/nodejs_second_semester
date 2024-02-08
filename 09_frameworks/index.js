@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.all("*", (req, res) => {
-  res.status(404).jsonp({ message: "Page not found" });
+  res.status(404).jsonp({ message: "Page not found" }); // This has to be the last method on the chain because it will catch all requests
 });
 
 app.listen(3000, () => {

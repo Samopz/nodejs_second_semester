@@ -5,9 +5,19 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   res.header("Content-Type", "text/html");
-  res.write("<h2>Hello World!</h2>");
+  res.write("<h2>Hello World from get!</h2>");
   res.end();
 });
+app.post("/", (req, res) => {
+  res.header("Content-Type", "text/html");
+  res.write("Hello World from Post!");
+  res.end();
+});
+// app.put("/", (req, res) => {
+//   res.header("Content-Type", "text/html");
+//   res.write("<h1>Hello World from put!</h1>");
+//   res.end();
+// });
 
 app.get("/books", (req, res) => {
   res.write("Hello books!");
